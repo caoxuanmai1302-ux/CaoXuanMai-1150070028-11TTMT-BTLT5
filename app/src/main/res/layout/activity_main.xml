@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <ImageView
+            android:id="@+id/iv_uit_logo"
+            android:layout_width="@dimen/image_base"
+            android:layout_height="@dimen/image_base"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/sym_def_app_icon"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_basex2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/from_xml"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/from_code"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 10 hàng nút XML | CODE -->
+            <!-- H1 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_fade_in_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/fade_in"/>
+                <Button android:id="@+id/btn_fade_in_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/fade_in"/>
+            </LinearLayout>
+            <!-- H2 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_fade_out_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/fade_out"/>
+                <Button android:id="@+id/btn_fade_out_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/fade_out"/>
+            </LinearLayout>
+            <!-- H3 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_blink_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/blink"/>
+                <Button android:id="@+id/btn_blink_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/blink"/>
+            </LinearLayout>
+            <!-- H4 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_zoom_in_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/zoom_in"/>
+                <Button android:id="@+id/btn_zoom_in_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/zoom_in"/>
+            </LinearLayout>
+            <!-- H5 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_zoom_out_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/zoom_out"/>
+                <Button android:id="@+id/btn_zoom_out_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/zoom_out"/>
+            </LinearLayout>
+            <!-- H6 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_rotate_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/rotate"/>
+                <Button android:id="@+id/btn_rotate_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/rotate"/>
+            </LinearLayout>
+            <!-- H7 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_move_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/move"/>
+                <Button android:id="@+id/btn_move_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/move"/>
+            </LinearLayout>
+            <!-- H8 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_slide_up_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/slide_up"/>
+                <Button android:id="@+id/btn_slide_up_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/slide_up"/>
+            </LinearLayout>
+            <!-- H9 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_bounce_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/bounce"/>
+                <Button android:id="@+id/btn_bounce_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/bounce"/>
+            </LinearLayout>
+            <!-- H10 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="@dimen/margin_base">
+                <Button android:id="@+id/btn_combine_xml"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/combine"/>
+                <Button android:id="@+id/btn_combine_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/combine"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="12dp">
+                <Button android:id="@+id/btn_next_activity" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/open_next"/>
+                <Button android:id="@+id/btn_open_pager"     android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/open_pager"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
